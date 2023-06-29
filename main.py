@@ -6,7 +6,7 @@ GPIO.setmode(GPIO.BOARD)
 GPIO.setup(12, GPIO.OUT) # Channel 1
 GPIO.setup(16, GPIO.OUT) # Channel 2
 
-GPIO.setup(18, GPIO.IN)
+GPIO.setup(18, GPIO.IN) 
 
 def signal_received(pin):
 
