@@ -12,7 +12,7 @@ def signal_received(pin):
 
     # Check the RF signal and turn relay on or off
     if GPIO.input(pin) == 1:
-        # RF signal received, turn relay on
+        # RF signal received, turn relay on 
         GPIO.output(12, GPIO.HIGH)
         GPIO.output(16, GPIO.HIGH)
     else:
