@@ -15,10 +15,6 @@ def signal_received(pin):
         # RF signal received, turn relay on
         GPIO.output(12, GPIO.HIGH)
         GPIO.output(16, GPIO.HIGH)
-    else:
-        # No RF signal received, turn relay off
-        GPIO.output(12, GPIO.LOW)
-        GPIO.output(16, GPIO.LOW)
 
 # Event detection for the RF receiver pin
 GPIO.add_event_detect(18, GPIO.BOTH, callback=signal_received)
